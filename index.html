@@ -1,0 +1,376 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>tercera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head><body onLoad="MM_preloadImages('imagenes/peru.jpg','imagenes/australia.jpg','imagenes/rusia.jpg','imagenes/india.jpg','imagenes/mexico.jpg','imagenes/japon.jpg','imagenes/indonesia.jpg','imagenes/china.jpg','imagenes/EU.jpg','imagenes/brasil.jpg')">
+<div data-role="page" id="Principal" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>La Contaminación</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div data-role="" data-content-theme="false">
+    <div>
+  </div>
+  <div>
+  <img src="imagenes/contami1.jpg" width="100%" height="75%"></div>
+  </div>
+  </div>
+  
+<div>
+  <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>¿Qué es la Contaminación?</h2>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Países con mayor contaminación</h2>
+    </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Causas de la contaminación</h2>
+    </a>
+  </li>  
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Consecuencias de la contaminación</h2>
+    </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Medidas preventivas para la contaminación</h2>
+    </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Visor de imágenes de la contaminación</h2>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Como  puedo contribuir para acabar con la contaminación</h2>
+    </a>
+  </li> 
+  </ul>
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <div>
+  <h4>Aplicacion tres</h4>
+    <img src="imagenes/mundo.png" width="46" height="46">
+  <h4>Erika Giles Rosas</h4>
+  </div>
+  </div>
+  </div>
+  
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>¿QUÉ ES LA CONTAMINACIÓN?</h1>
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  <img src="imagenes/cont.jpg" width="50%" height="50%">
+    <p>Se denomina contaminación ambiental a la presencia en el ambiente de cualquier agente (físico, químico o biológico) o bien de una combinación de varios agentes en lugares, formas y concentraciones tales que sean o puedan ser nocivos para la salud, la seguridad o para el bienestar de la población, o bien, que puedan ser perjudiciales para la vida vegetal o animal, o impidan el uso normal de las propiedades y lugares de recreación y goce de los mismos.
+El grado de contaminación ambiental en la industria puede medirse a través de los llamados indicadores de riesgo o de exposición, que detectan los niveles adquiridos por aquellos compuestos que penetran en el organismo a través de diversas vías (oral, respiratoria o cutánea).
+Existen unos niveles permitidos de exposición a las distintas sustancias o agentes contaminantes que no deben ser superados, siendo el deber de toda industria mantener la concentración ambiental de dichos contaminantes dentro de los límites legales establecidos.
+</p>
+<h3>Tipos de Contaminación</h3>
+    <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h2>Contaminación del Suelo</h2>
+    <img src="imagenes/suelo1.jpg" width="50%" height="50%">
+    <p>El suelo es un constituyente normal de la Naturaleza, con componentes minerales y orgánicos y con componentes biológicos constituidos por organismos que viven en él.
+La contaminación del suelo: es la incorporación al suelo de materias extrañas, como basura, desechos tóxicos, productos químicos, y desechos industriales, este tipo de contaminación produce un desequilibrio físico, químico y biológico que afecta negativamente las plantas, animales y humanos.
+El uso de abonos, la sedimentación de contaminantes atmosféricos de origen industrial, los vertidos industriales y los depósitos y escombreras producen alteraciones en los suelos difícilmente cuantificables, sobre las que es problemática la previsión de efectos.
+</p>
+</div>
+  </div>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h2>Contaminación del aire</h2>
+    <img src="imagenes/aire1.jpg" width="50%" height="50%">
+    <p>El aire limpio está compuesto principalmente por nitrógeno y oxígeno, en pequeñas proporciones se puede encontrar vapor de agua y dióxido de carbono. La contaminación del aire, proviene de la adición de sustancias emitidas a la atmósfera que causan un desequilibrio en la composición original. El aire contaminado contiene gases, polvos, olores y humos en grandes cantidades que dañan la salud de las personas, animales y plantas. Existen dos tipos de contaminantes:
+1.	Los que son arrojados directamente a la atmósfera como resultado de un proceso de combustión se llaman contaminantes primarios, estos son: dióxido de azufre, monóxido de carbono, vapores de combustibles y partículas suspendidas.
+2.	Una vez en el aire, algunos contaminantes primarios reaccionan con otros compuestos y forman contaminantes de igual o mayor toxicidad, estos se denominan contaminantes secundarios.
+La contaminación daña de diferente manera la salud de los individuos dependiendo de su nivel de exposición a los contaminantes, de su capacidad y de su resistencia física.
+- Una de rechazo a través de tos o estornudos.
+- A través de la presencia de diversos síntomas o de enfermedades específicas
+</p>
+  </div>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h2>Contaminación del agua</h2>
+    <img src="imagenes/agua1.jpg" width="50%" height="50%">
+    <p>La contaminación del agua se produce a través de la introducción directa o indirecta en los acuíferos o cauces de agua de diversas sustancias que pueden ser consideradas como contaminantes.
+Se pueden definir tres tipos de contaminación del agua:
+En el ambiente laboral e industrial el agua contaminada puede producir daños de salud a los trabajadores, las vías de penetración del agua contaminada en el ser humano
+Como sabemos, la contaminación del agua no sólo afecta a los propios humanos en sí, sino a la fauna y a los diferentes seres vivos que pueden vivir en la misma. Eso sin contar que el agua contaminada puede ser portadora de una gran variedad de enfermedades, algunas de ellas mortales.
+</p>
+  </div>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h2>Contaminación auditiva</h2>
+    <img src="imagenes/auditiva1.jpg" width="50%" height="50%">
+    <p>Se le llama contaminación auditiva al exceso de sonido que altera las condiciones normales de ambiente en una determinada zona si bien el ruido no se acumula ni se traslada o se mantiene en el ambiente o atreves del tiempo como las otras contaminaciones pero no deja de ser tan dañina como las otras contaminaciones que si se mantienen y se acumulan y sin en cambio también pueden causar grandes daños a la salud y la calidad de vida de las personas si se controla adecuadamente aunque todavía no nos hemos dado cuenta del todo de esta contaminación vivir en una ciudad tiene muchas ventajas pero también puede traer serias afecciones en la salud.
+Por los altos niveles de ruido, cuatro de cada cinco habitantes de las ciudades industrializadas padecen alguna deficiencia auditiva en la sociedad sin embargo son pocos los que se percatan de su problema
+Características de la contaminación auditiva
+Invisible e irreversible es el camino que conduce a la sordera, y lo más grave es que las personas se acostumbran al ruido nocivo y lo ven como parte de su vida
+</p>
+  </div>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h2>Contaminación visual</h2>
+    <img src="imagenes/visual1.jpg" width="50%" height="50%">
+    <p>Alteración visual de la imagen y fisonomía del entorno urbano causada por acumulación de materia prima, productos, desechos, abandono de edificaciones y bienes materiales, así como, violación en las densidades y características físicas de publicidad.
+Nuestro cerebro tiene una determinada capacidad de absorción de datos. Los sentidos son los encargados de transmitir al cerebro toda información que perciben del entorno. Entre ellos, el sentido de la vista es uno de los más complejos y de los que mayor incidencia tiene en la percepción global del entorno y, por lo tanto, en las reacciones psicofísicas del hombre.
+</p>
+  </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <div>
+  <h4>Aplicacion tres</h4>
+    <img src="imagenes/mundo.png" width="46" height="46">
+  <h4>Erika Giles Rosas</h4>
+    </div>
+  </div>
+  </div>
+  
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>PAÍSES CON MAYOR CONTAMINACIÓN</h1>
+  </div>
+  <div data-role="content" align="center">
+  <div>
+    <h3>Perú</h3>
+<p>La sobrepesca, deforestación de la selva y la explotación minera que además ha violado derechos indígenas valen que Perú entre en ranking.</p>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/peru.jpg',1)"><img src="imagenes/contaminacion.jpg" width="259" height="194" id="Image26"></a>
+      <h3>Australia</h3>
+<p>A esta nación no se le perdona la pérdida de bosque nativo y contaminación marina, lugares con una de las diversidades más numerosas y únicas del mundo.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image27','','imagenes/australia.jpg',1)"><img src="imagenes/contaminacion.jpg" width="259" height="194" id="Image27"></a>
+<h3>Rusia</h3>
+<p>Mucha emisión de CO2, residuos nucleares y bajo porcentaje de agua potable.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image28','','imagenes/rusia.jpg',1)"><img src="imagenes/contaminacion.jpg" width="259" height="194" id="Image28"></a>
+<h3>India</h3>
+<p>Tiene un grave problema de contaminación del agua gracias al mal uso de fertilizantes y a las prácticas humanas.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29','','imagenes/india.jpg',1)"><img src="imagenes/contaminacion.jpg" width="259" height="194" id="Image29"></a>
+<h3>México</h3>
+<p>No ha firmado el convenio internacional de especies amenazadas  y también sobreexplota sus recursos. En D.F no saben que hacer con la basura, emisiones y contaminación.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','imagenes/mexico.jpg',1)"><img src="imagenes/contaminacion.jpg" width="259" height="194" id="Image30"></a>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+      <h2>ver más</h2>
+<h3>Japón</h3>
+<p>Además de la sobre-explotación de los recursos y de una cultura del derroche, lo japoneses sufrieron hasta la peligrosa contaminación nuclear que aun causa estragos.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image31','','imagenes/japon.jpg',1)"><img src="imagenes/contaminacion.jpg" width="259" height="194" id="Image31"></a>
+<h3>Indonesia</h3>
+<p>La deforestación y el hacinamiento humano sin duda no son una buena mezcla.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','imagenes/indonesia.jpg',1)"><img src="imagenes/contaminacion.jpg" width="259" height="194" id="Image32"></a>
+<h3>China</h3>
+<p>La sobrepoblación, la gran cantidad de industrias, la energía a carbón generan una contaminación que no le da muy fama a este país asiático. Hasta la mayoría de sus ríos y canales son un flujo peligrosa y bizarra de toxicidad.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image33','','imagenes/china.jpg',1)"><img src="imagenes/contaminacion.jpg" width="259" height="194" id="Image33"></a>
+<h3>Estados Unidos</h3>
+<p>Ser una potencia mundial tiene sus pros y contras. La gran industrialización de Estados Unidos, su negativa a participar en algunos tratados internacionales del medio ambiente, la fertilización de los campos y la enorme industria ganadera, dejan como resultado millones de emisiones de CO2.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image34','','imagenes/EU.jpg',1)"><img src="imagenes/contaminacion.jpg" width="259" height="194" id="Image34"></a>
+<h3>Brasil</h3>
+<p>Obtiene el primer lugar por la imperdonable deforestación que se está ejecutando en la selva amazónica, pulmón del mundo que es aniquilado a pasos agigantados. Por otro lado la extracción de petróleo aniquila a millones de especies.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image35','','imagenes/brasil.jpg',1)"><img src="imagenes/contaminacion.jpg" width="259" height="194" id="Image35"></a> </div>
+</div>
+    </div>
+  </div>
+   <div data-role="footer" align="center" data-theme="b">
+  <div>
+  <h4>Aplicacion tres</h4>
+    <img src="imagenes/mundo.png" width="46" height="46">
+  <h4>Erika Giles Rosas</h4>
+    </div>
+  </div>
+  </div>
+   
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>CAUSAS DE LA CONTAMINACIÓN</h1>
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  <img src="imagenes/aire2.jpg" width="25%" height="25%">
+   <img src="imagenes/agua2.jpg" width="25%" height="25%">
+    <img src="imagenes/causas.jpg" width="25%" height="25%">
+  <p>Loscontaminantes químicosprovienen principalmente de la industria química: productos tóxicos minerales, ácidos, disolventes orgánicos, detergentes, plásticos, los derivados del petróleo, pesticidas (como el DDT), abonos sintéticos, etc. Entre los contaminantes físicos encontramos la radioactividad, el calor, el ruido, efectos mecánicos, etc., mientras que los contaminantes biológicos se refieren a desechos orgánicos que, al descomponerse, fermentan y causan el daño (excrementos, desechos de fábricas, papel, serrín de la industria forestal, desagües, etc.)
+El aumento continuo de la población y un incontrolado desarrollo industrial originan serios problemas para el medio ambiente en forma de contaminación. Las causas de la contaminación ambiental son variadas. La presencia en el ambiente de cualquier agente físico, químico o biológico cuya concentración ocasione alteraciones en la estructura y el funcionamiento de los ecosistemas se consideran como parte de este tipo de contaminación.
+ </p>
+ <img src="imagenes/causa1.jpg" width="25%" height="25%">
+   <img src="imagenes/causa2.jpg" width="25%" height="25%">
+    <img src="imagenes/causa3.jpg" width="25%" height="25%">
+  </div>
+  </div>
+   <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <div>
+  <h4>Aplicacion tres</h4>
+    <img src="imagenes/mundo.png" width="46" height="46">
+    <h4>Erika Giles Rosas</h4>
+    </div>
+  </div>
+  </div> 
+  
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>CONSECUENCIAS DE LA CONTAMINACIÓN</h1>
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  <img src="imagenes/consecuencia2.jpg" width="25%" height="25%">
+   <img src="imagenes/consecuencia3.jpg" width="25%" height="25%">
+    <img src="imagenes/consecuencia5.jpg" width="25%" height="25%">
+   <p>Mientras los gobernantes deciden cuáles son las medidas que más les favorecen y que se pueden aplicar para reducir la contaminación en nuestro mundo, muchas son las especies que mueren cada día y esto sin tener en cuenta las otras consecuencias de la contaminación que ahora vamos a detallar.
+Problemas para la salud: la contaminación hace que las personas estemos cada vez más expuestas a padecer problemas cardiovasculares, con el grave peligro que esto entraña para nuestra salud y vida.
+Debilitamiento de la capa de ozono: la capa de ozono es la que nos protege de los rayos del Sol, los cuales pueden llegar a ser mortíferos sin esta capa. la consecuencia de este debilitamiento es que cada vez nos protege menos y, por ende, cada vez tenemos una mayor temperatura en el planeta. Esto no solo hace que cada vez haya más zonas desiertas en las que es imposible vivir, sino que también hace que el hielo en los polos se deshaga y mueran muchas especies por ello. No hace falta mencionar que esto hace subir indudablemente el nivel del mar y que, de seguir así, muchas ciudades costeras se verán arrasadas, quedándose sin playas y sin zona costera.
+La contaminación afecta al suelo y al agua: la contaminación al medio ambiente afecta al agua y al suelo, lo que hace que cada vez haya más especies en peligro de extinción. El agua no es potable en una gran cantidad de sitios y el suelo para la siembre no tiene los nutrientes necesarios, lo que hace que cada vez se pueda cultivar menos y que el número de cosechas para nuestro sustento sea cada vez menor.
+
+La contaminación afecta al clima: seguro que ya te has dado cuenta que los inviernos pueden ser mucho más fríos o que los veranos son mucho más calurosos, a la vez que seguro te has dado cuenta que las estaciones como el invierno y el verano pueden ser más largas y que las de temperaturas medias, son cada vez más cortas. Todos estos cambios y los fenómenos que no se habían visto desde  hace mucho tiempo o incluso nunca se habían visto son causados por la contaminación.
+</p>
+<img src="imagenes/aire3.jpg" width="25%" height="25%">
+   <img src="imagenes/suelo2.jpg" width="25%" height="25%">
+    <img src="imagenes/consecuencias1.jpg" width="25%" height="25%">
+    </div>
+    </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <div>
+  <h4>Aplicacion tres</h4>
+    <img src="imagenes/mundo.png" width="46" height="46">
+     <h4>Erika Giles Rosas</h4>
+    </div>
+  </div>
+  </div>
+  
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>MEDIDAS PREVENTIVAS PARA LA CONTAMINACIÓN</h1>
+  </div>
+  <div data-role="content" align="center">
+  <div>
+    <P>    
+    • no quemar ni talar plantas
+    <br>
+• controlar el uso de fertilizantes y pesticidas
+    <br>
+• no botar basura en lugares inapropiados
+    <br>
+• regular el servicio de aseo urbano
+    <br>
+• crear conciencia ciudadana
+    <br>
+• crear vías de desagües para las industrias que no lleguen a los mares ni ríos utilizados para el servicio o consumo del hombre ni animales
+• controlar los derramamientos accidentales de petróleo
+    <br>
+• controlar los relaves mineros
+    <br>
+ <img src="imagenes/medidas.jpg" width="35%" height="35%">
+  <img src="imagenes/medida1.jpg" width="35%" height="35%">
+</p>
+  </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <div>
+  <h4>Aplicacion tres</h4>
+    <img src="imagenes/mundo.png" width="46" height="46">
+     <h4>Erika Giles Rosas</h4>
+    </div>
+  </div>
+  </div>
+  
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>VISOR DE IMÁGENES DE LA CONTAMINACIÓN</h1>
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  <p>Lamentablemente esta es la contaminacion que existe en mi colonia Valle Sur</p>
+   <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:800px;height:600px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+  </div>
+  </div>
+   <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <div>
+  <h4>Aplicacion tres</h4>
+    <img src="imagenes/mundo.png" width="46" height="46">
+     <h4>Erika Giles Rosas</h4>
+    </div>
+  </div>
+  </div>
+  
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>COMO PUEDO CONTRIBUIR PARA ACABAR CON LA CONTAMINACIÓN
+  </h1>
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  <img src="imagenes/medida3.jpg" width="25%" height="25%">
+  <img src="imagenes/1.jpg" width="25%" height="25%">
+  <img src="imagenes/tres.jpg" width="25%" height="25%">
+        <P>    
+    • Hablar con mi comunidad para crear conciencia acerca del daño que le hacemos al medio ambiente.
+    <br>
+• Formar grupos que ha determinado tiempo limpien las calles.
+<br>
+• Poner en practica la regla de las tres"R"(reciclar,reducir,reutilizar)
+<br>
+• No tirar basura.
+<br>
+• Cuidar las áreas verdes.
+<br>
+ <img src="imagenes/frase.jpg" width="50%" height="75%">
+</p> 
+  </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <div>
+  <h4>Aplicacion tres</h4>
+    <img src="imagenes/mundo.png" width="46" height="46">
+     <h4>Erika Giles Rosas</h4>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
